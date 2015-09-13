@@ -2,7 +2,7 @@
 
 ## 介绍
 
-kafka-producer是ssy-dmp小组基于Kafka客户端0.8.1.1版本进行开发的一个Kafka生产者应用程序。该版本的客户端和ssy-dmp小组应用的Kafka中间件对应。kafka-producer是为了不了解Kafka的同学提供的工具，提供了同步和异步两种消费者客户端。
+kafka-producer是基于Kafka客户端0.8.1.1版本进行开发的一个Kafka生产者应用程序。该版本的客户端和ssy-dmp小组应用的Kafka中间件对应。kafka-producer是为了不了解Kafka的同学提供的工具，提供了同步和异步两种消费者客户端。
 
 
 ## 使用方式

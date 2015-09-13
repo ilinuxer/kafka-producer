@@ -4,22 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>ssy-dmp</groupId>
+    <groupId>qian.huang</groupId>
     <artifactId>kafka-producer</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <repositories>
-        <repository>
-            <id>nexus-suishen</id>
-            <name>Nexus suishen</name>
-            <url>http://maven.etouch.cn/nexus/content/groups/public/</url>
-            <snapshots>
-                <enabled>true</enabled>
-                <updatePolicy>always</updatePolicy>
-                <checksumPolicy>warn</checksumPolicy>
-            </snapshots>
-        </repository>
 
         <repository>
             <id>nexus-osc</id>
@@ -165,19 +155,4 @@
         </plugins>
     </reporting>
     -->
-    <distributionManagement>
-        <repository>
-            <id>suishen-release</id>
-            <name>Suishen-Releases</name>
-            <url>http://maven.etouch.cn/nexus/content/repositories/Suishen-Releases</url>
-        </repository>
-
-        <snapshotRepository>
-            <id>suishen-snapshot</id>
-            <name>Suishen-Snapshots</name>
-            <url>http://maven.etouch.cn/nexus/content/repositories/Suishen-Snapshots</url>
-        </snapshotRepository>
-    </distributionManagement>
-
-
 </project>
