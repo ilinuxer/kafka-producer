@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <property name="root_log_dir" value="${catalina.base}/logs/dmp.suishenyun.net-log4j/" />
+
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <Target>System.out</Target>
+        <encoder>
+            <pattern>%date [%level] [%thread] %logger{80} [%file : %line] %msg%n</pattern>
+        </encoder>
+    </appender>
+    <appender name="PROFILE_LOG_APPENDER" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${root_log_dir}PROFILE_LOG.log</File>
+        <Append>true</Append>
+        <encoder>
+            <pattern>%date [%level] [%thread] %logger{80} [%file : %line] %msg%n</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${root_log_dir}PROFILE_LOG.log.%d</fileNamePattern>
+        </rollingPolicy>
+    </appender>
+
+    <logger name="com.jolbox" level="ERROR"/>
+    <logger name="profileLogger" level="INFO">
+        <appender-ref ref="PROFILE_LOG_APPENDER"/>
+    </logger>
+
+    <root level="INFO">
+        <appender-ref ref="stdout"/>
+    </root>
+</configuration>

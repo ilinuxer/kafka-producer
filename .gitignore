@@ -1,0 +1,13 @@
+.DS_Store
+out
+target
+dist
+buid
+logs
+*.iml
+.idea
+.classpath
+.project
+build/*
+.settings
+/build/
