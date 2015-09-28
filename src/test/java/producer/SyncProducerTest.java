@@ -20,7 +20,7 @@ public class SyncProducerTest {
 
     private KafkaProducer<String,String> syncProducer = KafkaProducerBuilder.getBuilder()
             .setSendType(SendType.SYNC)
-            .setBrokerList("192.168.30.102:9092").build();
+            .setBrokerList("127.0.0.1:9092").build();
 
     @Test
     public void testCreateSyncProducer(){

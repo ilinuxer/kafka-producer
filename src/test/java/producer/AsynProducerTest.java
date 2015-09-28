@@ -22,7 +22,7 @@ import java.util.List;
 public class AsynProducerTest {
 
     private KafkaProducer<String,String> asyncProducer = KafkaProducerBuilder.getBuilder()
-            .setBrokerList("192.168.30.102:9092")
+            .setBrokerList("127.0.0.1:9092")
             .setSendType(SendType.ASYNC)
             .setBatchNumMessages(10)
             .build();

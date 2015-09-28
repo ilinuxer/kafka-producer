@@ -23,7 +23,7 @@ public class ProducerTest {
     @Test
     public void connectProducer(){
         Properties props = new Properties();
-        props.put("metadata.broker.list", "192.168.30.102:9092");
+        props.put("metadata.broker.list", "127.0.0.1:9092");
         props.put("serializer.class", "kafka.serializer.StringEncoder");
 //        props.put("partitioner.class", "example.producer.SimplePartitioner");
         props.put("request.required.acks", "0");
